@@ -1,6 +1,7 @@
 .image {
-  width: 720px;
-  height: 720px;
+  padding-top: 20px;
+  width: 256px;
+  height: 256px;
   display: block;
   margin-left: auto;
   margin-right: auto;

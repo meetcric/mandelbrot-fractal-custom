@@ -20,7 +20,7 @@ import { createCustomElement } from '@angular/elements';
     MatCardModule
   ],
   providers: [],
-  entryComponents: [ FractalImageComponent ]
+  entryComponents : [FractalImageComponent]
 })
 export class AppModule {
   constructor(private injector: Injector) { }
