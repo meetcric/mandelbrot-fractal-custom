@@ -237,7 +237,7 @@ MIT
 @angular/elements
 MIT
 
-@angular/material
+@angular/cdk
 MIT
 The MIT License
 
@@ -265,7 +265,13 @@ THE SOFTWARE.
 @angular/common
 MIT
 
-@angular/cdk
+@angular/platform-browser
+MIT
+
+@angular/forms
+MIT
+
+@angular/material
 MIT
 The MIT License
 
@@ -290,8 +296,10 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 
-@angular/platform-browser
+@angular/animations
 MIT
+
+@angular/material/radio
 
 @angular/material/card
 
