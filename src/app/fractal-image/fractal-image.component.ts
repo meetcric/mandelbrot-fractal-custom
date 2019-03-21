@@ -188,6 +188,9 @@ export class FractalImageComponent implements OnInit {
           this.zoomByAt(amt, (e.offsetX - e.target.clientWidth / 2.0) * this.desired_image_properties.pix_x,
             (e.offsetY - e.target.clientHeight / 2.0) * this.desired_image_properties.pix_y);
         }
+        else {
+          this.motion_z += amt;
+        }
       })
 
   }
@@ -251,8 +254,15 @@ export class FractalImageComponent implements OnInit {
         this.velocity_z = this.motion_z * this.ZOOM_VELOCITY_FACTOR;
       
       this.panBy(this.velocity_x, this.velocity_y);
+      this.zoomBy(this.velocity_z)
       this.setMotionTimeout();
     }
+  }
+  zoomBy(v){
+    this.zoom_level += v;
+    this.desired_image_properties.pix_x = this.pix_size_x;
+    this.desired_image_properties.pix_y = this.pix_size_y;
+
   }
 
 }
